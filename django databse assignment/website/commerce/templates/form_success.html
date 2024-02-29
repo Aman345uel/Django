@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Success</title>
+</head>
+<body>
+    <h1>Form Submitted Successfully!</h1>
+    <p>Thank you for your submission. Here are the details:</p>
+    <ul>
+        <li><strong>Email:</strong> {{ latest_submission.email }}</li>
+        <li><strong>Name:</strong> {{ latest_submission.name }}</li>
+        <li><strong>Address:</strong> {{ latest_submission.address }}</li>
+        <li><strong>Message:</strong> {{ latest_submission.message }}</li>
+        <li><strong>Submitted Date:</strong> {{ latest_submission.submitted_at }}</li>
+    </ul>
+    <p>
+        if you would like to add more info you can go back to the <a href="{% url 'contact' %}" class="btn btn-primary"> Contact Page</a>
+    </p>
+
+</body>
+</html>
+
